@@ -3,15 +3,25 @@
 
     <head>
         <title><%= title %></title>
-        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
     </head>
 
     <body>
-        <div class ="ui fixed inverted menu">
-            <div class='ui container'>
-                <div class='header item'><i class='code branch icon'></i>Kyle Knickerbocker</div>
-                <a href='/' class ='item'>Projects</a>
-                <a href='/writings' class='item'>Writings</a>
+            <div class='ui inverted segment' id ='navbar'>
+                <div class='ui inverted secondary pointing menu'>
+                    <a href='/' class='header item'><i class='code branch icon'></i>Home</a>
+                    <div class='right menu'>
+                        <a href='/projects' class='item'>Projects</a>
+                        <a href='/writings' class='item'>Writings</a>
+                    </div>
+                </div>
             </div>
-        </div>
+
+
+
+
+
