@@ -13,14 +13,18 @@ body {
   text-align: center;
 }
 
-#navbar {
+#header {
   position: sticky;
   position: -webkit-sticky;
   top: 2vh;
   height: 10vh;
 }
 
-#footerbar {
+#footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   position: sticky;
   position: -webkit-sticky;
   bottom: 3vh;
