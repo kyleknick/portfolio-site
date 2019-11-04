@@ -8,7 +8,7 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  height: 75vh;
+  height: 80vh;
 }
 
 .profilePage {
@@ -32,7 +32,6 @@ margin: auto;
 #header {
   position: sticky;
   position: -webkit-sticky;
-  top: 2vh;
   height: 10vh;
 }
 
@@ -43,7 +42,6 @@ margin: auto;
   align-items: center;
   position: sticky;
   position: -webkit-sticky;
-  bottom: 3vh;
   height: 10vh;
   color: blueviolet;
 }
