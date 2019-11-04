@@ -8,7 +8,7 @@ body {
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  height: 80vh;
+  height: 86vh;
 }
 
 .profilePage {
@@ -16,6 +16,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.homePic{
+  max-width: 25%;
+  height: auto;
 }
 
 /* .ui.small.circular.image {
@@ -32,7 +37,7 @@ margin: auto;
 #header {
   position: sticky;
   position: -webkit-sticky;
-  height: 10vh;
+  height: 7vh;
 }
 
 #footer {
@@ -42,7 +47,7 @@ margin: auto;
   align-items: center;
   position: sticky;
   position: -webkit-sticky;
-  height: 10vh;
+  height: 7vh;
   color: blueviolet;
 }
 
