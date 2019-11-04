@@ -2,13 +2,29 @@ body {
   margin: 0;
 }
 
-.box.flex {
+.flexbox {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  align-content: center;
   height: 75vh;
 }
 
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .ui.small.circular.image {
+text-align: center;
+margin: auto;
+} */
+.ui.container {
+  text-align: center;
+}
 .ui.main.text.container{
   text-align: center;
 }
