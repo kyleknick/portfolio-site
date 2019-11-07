@@ -53,11 +53,25 @@ margin: auto;
   position: sticky;
   position: -webkit-sticky;
   height: 12vh;
+  color: #FF7B1A;
 }
-.header item {
-  display: inline-block;
-  margin-left: 10px;
+
+.item {
+color: #FF7B1A;
 }
+
+.logo {
+  padding: 8px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.name{
+  color: #43BCD5;
+  padding-left: 10px;
+  font-size:  18px;
+}
+
 
 #footer {
   display: flex;
