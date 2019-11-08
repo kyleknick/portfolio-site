@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito', sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #384D60;
 }
 
 h1.title {
   font-size: 48px;
+  font-weight: 700;
+}
+h2.subtitle {
+  color: #FF7733;
 }
 h3.subsubtitle {
   font-style: italic;
@@ -22,6 +27,20 @@ h3.subsubtitle {
   align-items: center;
   align-content: center;
   height: 86vh;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+
+.service {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  background-color: #43B2D5;
 }
 
 .profilePage {
@@ -40,24 +59,44 @@ h3.subsubtitle {
 text-align: center;
 margin: auto;
 } */
-.ui.container {
+.ui.container.grid{
+  display: flex;
   text-align: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 5%;
 }
-.ui.main.text.container{
+/* .ui.text.container {
+  display: flex;
+  flex-direction: column;
+} */
+.ui.text.container{
+  font-family: Helvetica, Arial, sans-serif;
   text-align: center;
   padding-left: 5%;
+  color: #384D60;
 }
 
+.flexcol .item {
+  padding: 10%;
+}
+
+.item .content {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #384D60;
+}
 
 #header {
   position: sticky;
   position: -webkit-sticky;
   height: 12vh;
-  color: #FF7B1A;
 }
 
-.item {
-color: #FF7B1A;
+.ui.top.fixed.menu .right.menu a.item {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  color: #FF7733;
 }
 
 .logo {
@@ -67,7 +106,9 @@ color: #FF7B1A;
   align-items: center;
 }
 .name{
-  color: #43BCD5;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #43B2D5;
+  font-weight: 700;
   padding-left: 10px;
   font-size:  18px;
 }
