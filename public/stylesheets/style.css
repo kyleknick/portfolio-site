@@ -64,6 +64,8 @@ margin: auto;
   text-align: center;
   justify-content: space-around;
   flex-direction: row;
+  max-width: 100%;
+  flex: 1;
   margin: 5%;
 }
 /* .ui.text.container {
