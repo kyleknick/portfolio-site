@@ -3,21 +3,41 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+#header {
+  position: sticky;
+  position: -webkit-sticky;
+  height: 12vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif;
-  color: #384D60;
 }
 
 h1.title {
-  font-size: 48px;
+  font-size: 4vw;
   font-weight: 700;
+  color: #384D60;
 }
 h2.subtitle {
+  font-size: 2vw;
   color: #FF7733;
 }
+h2.serviceintro {
+  font-size: 3vw;
+}
 h3.subsubtitle {
+  font-size: 1.5vw;
   font-style: italic;
   font-weight: 300;
+  color: #384D60;
+}
+
+p.subintro {
+  font-size: 1.5vw;
+}
+
+img {
+  max-width: 100%;
 }
 
 .flexbox {
@@ -28,11 +48,24 @@ h3.subsubtitle {
   align-content: center;
   height: 86vh;
 }
-.flexcol {
+
+.ui.container{
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 3%;
+  color: #384D60;
+}
+
+.ui.two.column.grid {
   display: flex;
-  flex-direction: column;
   align-content: space-between;
-  justify-content: flex-end;
+ align-items: flex-end;
+}
+
+.column .content {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5vw;
+  color: #384D60;
 }
 
 .service {
@@ -61,44 +94,32 @@ margin: auto;
 } */
 .ui.container.grid{
   display: flex;
+  /* flex-wrap: wrap; */
   text-align: center;
   justify-content: space-around;
   flex-direction: row;
   max-width: 100%;
-  flex: 1;
+  /* flex: 1; */
   margin: 5%;
 }
-/* .ui.text.container {
-  display: flex;
-  flex-direction: column;
-} */
-.ui.text.container{
-  font-family: Helvetica, Arial, sans-serif;
-  text-align: center;
-  padding-left: 5%;
-  color: #384D60;
+
+
+.ui.three.column.grid {
+  margin: 2%;
 }
 
-.flexcol .item {
-  padding: 10%;
+.ui.three.column.grid .column {
+  position: relative;
+  display:  inline-block;
 }
 
-.item .content {
-  font-family: Helvetica, Arial, sans-serif;
-  color: #384D60;
-}
 
-#header {
-  position: sticky;
-  position: -webkit-sticky;
-  height: 12vh;
-}
 
 .ui.top.fixed.menu .right.menu a.item {
   font-family: Helvetica, Arial, sans-serif;
   font-size: medium;
   font-weight: 700;
-  color: #FF7733;
+  color: #384D60;
 }
 
 .logo {
@@ -113,6 +134,37 @@ margin: auto;
   font-weight: 700;
   padding-left: 10px;
   font-size:  18px;
+}
+
+.project-caption{
+  display: block;
+  background: rgba(0, 0, 0, 0.85);
+  width: 80%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  right: 0;
+  transform: translate(12%, -80%);
+}
+
+.project-caption h3, .project-caption h5, .project-caption p {
+  color: white;
+  margin: 2%;
+}
+
+.project-caption h5 {
+  color: #43B2D5;
+}
+
+.column a .project-caption p {
+  display: none;
+}
+.column:hover a .project-caption p {
+  opacity: 1;
+  display: block;
 }
 
 
