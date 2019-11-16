@@ -7,6 +7,7 @@ body {
   position: sticky;
   position: -webkit-sticky;
   height: 12vh;
+  border: none;
 }
 
 #footer {
@@ -35,6 +36,7 @@ h2.subtitle {
 }
 h2.serviceintro {
   font-size: 3vw;
+  color: #384D60;
 }
 h3.subsubtitle {
   font-size: 1.5vw;
@@ -43,8 +45,16 @@ h3.subsubtitle {
   color: #384D60;
 }
 
+h3.about-header {
+  font-size: 1.8vw;
+  font-weight: 400;
+  color: #384D60;
+}
+
 p.subintro {
   font-size: 1.5vw;
+  text-align: left;
+  color: #384D60;
 }
 
 img {
@@ -60,6 +70,12 @@ img {
   height: 86vh;
 }
 
+.vertflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .ui.container{
   font-family: Helvetica, Arial, sans-serif;
   text-align: center;
@@ -69,22 +85,30 @@ img {
 
 .ui.two.column.grid {
   display: flex;
-  align-content: space-between;
- align-items: flex-end;
+  align-items: flex-end;
+}
+
+.ui.two.column.grid {
+  margin: 0;
 }
 
 .column .content {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.5vw;
-  color: #384D60;
+  font-weight: 600;
+  color: #1CB0DD;
 }
+
+/* .column img {
+  align-items: center;
+} */
 
 .service {
   display: flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  background-color: #43B2D5;
+  background-color: antiquewhite;
 }
 
 .profilePage {
@@ -139,7 +163,7 @@ margin: auto;
 }
 .name{
   font-family: Helvetica, Arial, sans-serif;
-  color: #43B2D5;
+  color: #1CB0DD;
   font-weight: 700;
   padding-left: 10px;
   font-size:  18px;
@@ -165,7 +189,7 @@ margin: auto;
 }
 
 .project-caption h5 {
-  color: #43B2D5;
+  color: #1293BA;
 }
 
 .column.wrap a .project-caption p {
