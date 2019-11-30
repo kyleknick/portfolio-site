@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.title {
   font-size: 1.5vw;
-  font-weight: 700;
+  font-weight: 500;
   padding: 5%;
   color: #434447;
 }
@@ -93,7 +93,7 @@ ul {
   color: #BC243C;
   display: list-item;
   font-family: 'Jost', 'Helvetica', 'Arial', 'sans-serif';
-  font-size: 1.5vw;
+  font-size: 1.7vw;
 }
 
 .divided {
@@ -108,7 +108,7 @@ ul {
 .divider {
   flex-grow: 1;
   border-bottom: 1px solid;
-  border-color: #fbe122;
+  border-color: #BC243C;
   margin: 15px;
 }
 
