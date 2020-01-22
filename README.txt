@@ -1,0 +1,1 @@
+This website is used as my online portfolio.  It was designed to use one grid template area wrapper for each page and then placing the sections of each page into the named areas of my defined template.  The goal was to add simplicity and reduce code in implementing responsiveness for all pages.
