@@ -39,18 +39,37 @@ body {
 
 .menu {
   grid-area: page2;
-  display: flex;
   margin-top: 1rem;
-  /* margin-left: 1rem; */
-  list-style-type: none;
+  width: 100vw;
+  background-color: var(--accent1);
   justify-content: space-around;
 }
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding: 0;
+}
 
- .menu a {
+.menu a {
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
   color: var(--accent2);
+  margin: 1rem;
+  display: block;
+}
+
+button {
+  display: block;
+  padding: 2vw;
+  font-size: 3vh;
+  background-color: var(--secondary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-end;
 }
 
 .headline {
@@ -137,6 +156,10 @@ body {
   .menu a::before {
     content: ">";
     color: var(--secondary);
+  }
+
+  button {
+    display: none;
   }
 
   .external-links {
