@@ -1,9 +1,9 @@
 :root {
-  --primary:#0B132B;
-  --secondary:#1C2541;
-  --accent1:#3A506B;
-  --accent2:#5BC0BE;
-  --background: #FCFCFC;
+  --primary:#1E1E1E;
+  --secondary:#E8E8E8;
+  --accent1:#194160;
+  --accent2: #30A715;
+  --background: #FFFAF4;
 }
 
 html  {
@@ -13,8 +13,8 @@ html  {
 body {
   margin: 0;
   font-family: 'Jost', 'Helvetica', 'Arial', 'sans-serif';
-  color: var(--secondary);
-  background-color: var(--accent1);
+  color: var(--primary);
+  background-color: var(--background);
 }
 
 *, *:after, *:before {
@@ -36,7 +36,7 @@ body {
   width: 100%;
   margin: 1rem 1rem;
   max-width: 27rem;
-  background-color: var(--background);
+  /* background-color: var(--background); */
 }
 
 .menu {
@@ -59,7 +59,7 @@ body {
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
-  color: var(--accent2);
+  color: var(--accent1);
   display: block;
 }
 
@@ -100,7 +100,7 @@ button {
   color: var(--primary);
   font-size: 3.0rem;
   font-weight: 700;
-  border-bottom: 3px solid var(--accent2);
+  /* border-bottom: 3px solid var(--accent1); */
   padding: 1rem;
   padding: 0;
   margin: 0;
@@ -126,9 +126,10 @@ button {
 }
 .bio-content {
   grid-area: page3;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 1rem 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .external-menu {
@@ -155,14 +156,14 @@ button {
 /* ***CV PAGE*** */
 
 .cv-title {
-  grid-area: page2 / page1;
+  grid-area: page1 / page1 / page1 / page5;
   color: var(--primary);
   font-size: 1.5rem;
   border-bottom: 3px solid var(--accent2);
 }
 
 .cv-section {
-  grid-area: page3;
+  grid-area: page2 / page2 / page2 /page3;
 }
 
 .about-subheader {
@@ -179,10 +180,10 @@ button {
 
 /* ***MATRIX PAGE*** */
 .matrix{
-  grid-area:  page3 / page3 / page3 / page4;
+  grid-area:  page2 / page2 / page6 / page6;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 100px);
-  grid-auto-rows: 100px;
+  grid-template-columns: repeat(auto-fill, 50px);
+  grid-auto-rows: 50px;
   grid-auto-flow: dense;
   color: #2b2d42;
   justify-content: center;
@@ -192,10 +193,9 @@ button {
 .matrix-title {
   overflow: hidden;
   display: grid;
-  grid-area: page1
+  grid-area: page1 / page1 / page1 / page5;
   background-color: #edf2f4;
-  margin: 5px;
-  font-size: 3vw;
+  font-size: 1.5rem;
   color: #2b2d42;
 }
 
@@ -251,18 +251,22 @@ button {
 .matrix-item.v4 {
   grid-column: span 4;
   grid-row: span 4;
+  font-size: 1.2rem;
 }
 
 .matrix-item.v3 {
   grid-area: span 3 / span 3;
+  font-size: 1rem;
 }
 
 .matrix-item.v2 {
   grid-area: span 2 / span 2;
+  font-size: 0.7rem;
 }
 
 .matrix-item.v1 {
   grid-area: span 1 / span 1;
+  font-size: 0.6rem;
 }
 
 .language {
@@ -280,15 +284,19 @@ button {
 /* ***PROJECTS*** */
 
 .projects-title{
-  grid-area: page1;
+  grid-area: page1 / page1 / page1 / page5;
+  text-align: center;
+  background-color: #edf2f4;
+  font-size: 1.5rem;
+  color: #2b2d42;
 }
 .projects-page {
-  grid-area: page3 / page3 / page3/ page4;
+  grid-area: page2 / page2 / page6 / page6;
   display: grid;
-  grid-template-columns: repeat(auto-fit,  300px);
-  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fit,  250px);
+  grid-auto-rows: 250px;
   grid-gap: 20px;
-  padding: 50px 10px;
+  padding: 30px 0px;
   justify-content: center;
 }
 
@@ -309,7 +317,15 @@ button {
 
 .project:hover .item__overlay {
   transform: translateY(0);
+  /* display: inline; */
+  font-size: 1rem;
+  padding: 5px;
 }
+
+.project:hover .item__overlay b {
+  display: inline;
+}
+
 
 
 /* RESPONSIVE DESIGN FOR LARGE SCREENS */
@@ -338,6 +354,10 @@ button {
   grid-area: page4 / page4 / page4 / page4;
   display: flex;
   width: auto;
+-webkit-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.57);
+box-shadow: 0px 7px 10px 0px rgba(0,0,0,0.57);
+  margin-bottom: 2rem;
 }
 
   .menu-list {
@@ -345,12 +365,22 @@ button {
     justify-content: space-evenly;
     list-style-type: none;
     width: 100%;
-   /* padding: 0; */
+    padding: 0;
+    margin: 0;
+    align-items: center;
   }
  .menu a {
     font-size: 1rem;
     text-decoration: none;
-    color: var(--accent2);
+    color: var(--accent1);
+  }
+
+.menu a:hover {
+  color: var(--accent2);
+}
+
+  .menu img {
+    padding: 0;
   }
 
   .menu a::before {
@@ -372,8 +402,9 @@ button {
     max-width: 20rem;
   }
 
-  .bio-header h2{
+  .bio-header {
     text-align: center;
+    vertical-align: bottom;
     padding: 0;
     margin: 0.5rem;
   }
